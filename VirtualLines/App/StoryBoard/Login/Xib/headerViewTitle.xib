@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="pZJ-rN-JIk" customClass="headerViewTitle" customModule="VirtualLines" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KWW-HG-K3Y" userLabel="contentView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Header" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nT-JP-a1W">
+                            <rect key="frame" x="265" y="10" width="82" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCg-Qt-C79">
+                            <rect key="frame" x="0.0" y="43" width="600" height="1"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="6ae-g0-Vra"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="MCg-Qt-C79" secondAttribute="bottom" id="1bl-ym-yJV"/>
+                        <constraint firstAttribute="centerY" secondItem="6nT-JP-a1W" secondAttribute="centerY" id="Fmf-ne-1Qz"/>
+                        <constraint firstAttribute="trailing" secondItem="MCg-Qt-C79" secondAttribute="trailing" id="Nat-lN-mgN"/>
+                        <constraint firstAttribute="centerX" secondItem="6nT-JP-a1W" secondAttribute="centerX" constant="-6" id="v3k-qL-NHj"/>
+                        <constraint firstItem="MCg-Qt-C79" firstAttribute="leading" secondItem="KWW-HG-K3Y" secondAttribute="leading" id="w9d-qt-xj9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KWW-HG-K3Y" secondAttribute="bottom" id="7rq-9M-doH"/>
+                <constraint firstAttribute="trailing" secondItem="KWW-HG-K3Y" secondAttribute="trailing" id="C7W-ti-X7n"/>
+                <constraint firstItem="KWW-HG-K3Y" firstAttribute="top" secondItem="pZJ-rN-JIk" secondAttribute="top" id="tBa-OW-k8p"/>
+                <constraint firstItem="KWW-HG-K3Y" firstAttribute="leading" secondItem="pZJ-rN-JIk" secondAttribute="leading" id="ttV-zX-4ur"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="140.80000000000001" y="215.8920539730135"/>
+        </view>
+    </objects>
+</document>

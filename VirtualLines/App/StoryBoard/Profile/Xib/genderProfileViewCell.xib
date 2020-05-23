@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="genderProfileViewCell" rowHeight="64" id="YeH-a8-xLF" customClass="genderProfileViewCell" customModule="VirtualLines" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YeH-a8-xLF" id="X7f-rb-afB">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yo soy:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29l-PT-PWl">
+                        <rect key="frame" x="20" y="9" width="49" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="49" id="Ig9-Nb-hog"/>
+                            <constraint firstAttribute="height" constant="17" id="tIW-CG-l2m"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJn-n4-ey2">
+                        <rect key="frame" x="31" y="34" width="111" height="34"/>
+                        <color key="backgroundColor" red="0.25098039220000001" green="0.47843137250000001" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="111" id="867-ce-rL6"/>
+                            <constraint firstAttribute="height" constant="34" id="vTp-fJ-B1j"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                        <color key="tintColor" red="0.25098039220000001" green="0.47843137250000001" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="Hombre"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.25098039220000001" green="0.47843137250000001" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="maleButtonPressedWithSender:" destination="YeH-a8-xLF" eventType="touchUpInside" id="kEY-Im-reE"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ito-kC-jhM">
+                        <rect key="frame" x="174" y="34" width="111" height="34"/>
+                        <color key="backgroundColor" red="0.25098039220000001" green="0.47843137250000001" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="111" id="HzK-3L-RlX"/>
+                            <constraint firstAttribute="height" constant="34" id="KGs-Fg-iWR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                        <color key="tintColor" red="0.25098039220000001" green="0.47843137250000001" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="Mujer"/>
+                        <state key="selected">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.25098039220000001" green="0.47843137250000001" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="femaleButtonPressedWithSender:" destination="YeH-a8-xLF" eventType="touchUpInside" id="fUW-gi-mU5"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ito-kC-jhM" firstAttribute="leading" secondItem="GJn-n4-ey2" secondAttribute="trailing" constant="32" id="1i1-Dt-SWe"/>
+                    <constraint firstItem="GJn-n4-ey2" firstAttribute="top" secondItem="29l-PT-PWl" secondAttribute="bottom" constant="8" id="BZp-dS-2Yl"/>
+                    <constraint firstAttribute="trailing" secondItem="ito-kC-jhM" secondAttribute="trailing" constant="129" id="b2H-pP-vEl"/>
+                    <constraint firstAttribute="bottom" secondItem="GJn-n4-ey2" secondAttribute="bottom" constant="6.5" id="czM-60-jTq"/>
+                    <constraint firstItem="ito-kC-jhM" firstAttribute="leading" secondItem="GJn-n4-ey2" secondAttribute="trailing" constant="32" id="f8T-HL-gpp"/>
+                    <constraint firstItem="29l-PT-PWl" firstAttribute="leading" secondItem="X7f-rb-afB" secondAttribute="leading" constant="20" id="h3R-rC-Uie"/>
+                    <constraint firstItem="GJn-n4-ey2" firstAttribute="leading" secondItem="X7f-rb-afB" secondAttribute="leading" constant="31" id="moi-25-UpD"/>
+                    <constraint firstAttribute="bottom" secondItem="ito-kC-jhM" secondAttribute="bottom" constant="6.5" id="nkN-1T-bpm"/>
+                    <constraint firstItem="29l-PT-PWl" firstAttribute="top" secondItem="X7f-rb-afB" secondAttribute="top" constant="9" id="xBe-Kr-7xb"/>
+                    <constraint firstItem="ito-kC-jhM" firstAttribute="top" secondItem="X7f-rb-afB" secondAttribute="top" constant="34" id="y5B-cT-4SU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="buttonFemale" destination="ito-kC-jhM" id="PXi-33-Tff"/>
+                <outlet property="buttonMale" destination="GJn-n4-ey2" id="q0o-i7-IKO"/>
+            </connections>
+            <point key="canvasLocation" x="60.869565217391312" y="21.09375"/>
+        </tableViewCell>
+    </objects>
+</document>

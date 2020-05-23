@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PickerVirtualLines" customModule="VirtualLines" customModuleProvider="target">
+            <connections>
+                <outlet property="disclosure" destination="gxa-zt-B2L" id="acn-dM-jpe"/>
+                <outlet property="picketButton" destination="pj4-sn-0Wn" id="TvR-Bd-vJE"/>
+                <outlet property="value" destination="G1V-Ym-Bbs" id="qd4-py-ggz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="rt3-bN-zRo">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Detalle" translatesAutoresizingMaskIntoConstraints="NO" id="gxa-zt-B2L">
+                    <rect key="frame" x="345" y="8" width="15" height="30"/>
+                    <color key="tintColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="62j-Jl-bkv"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1V-Ym-Bbs">
+                    <rect key="frame" x="15" y="14" width="322" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.40756726259999998" green="0.40789857509999999" blue="0.40761858220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pj4-sn-0Wn">
+                    <rect key="frame" x="10" y="9" width="350" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="FCq-2l-leg"/>
+                        <constraint firstAttribute="width" constant="350" id="syj-n4-wZ0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.40756726259999998" green="0.40789857509999999" blue="0.40761858220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="Kvx-rA-3cs"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="G1V-Ym-Bbs" firstAttribute="leading" secondItem="rt3-bN-zRo" secondAttribute="leading" constant="15" id="1X1-Cu-AK9"/>
+                <constraint firstAttribute="trailing" secondItem="pj4-sn-0Wn" secondAttribute="trailing" constant="15" id="8W2-er-v73"/>
+                <constraint firstItem="gxa-zt-B2L" firstAttribute="leading" secondItem="G1V-Ym-Bbs" secondAttribute="trailing" constant="8" id="Kgr-iy-MLE"/>
+                <constraint firstItem="G1V-Ym-Bbs" firstAttribute="centerY" secondItem="rt3-bN-zRo" secondAttribute="centerY" constant="-1" id="Ozz-ja-65O"/>
+                <constraint firstAttribute="trailing" secondItem="gxa-zt-B2L" secondAttribute="trailing" constant="15" id="Rwe-B1-qwp"/>
+                <constraint firstItem="pj4-sn-0Wn" firstAttribute="top" secondItem="rt3-bN-zRo" secondAttribute="top" constant="9" id="igK-Bk-HQT"/>
+                <constraint firstItem="gxa-zt-B2L" firstAttribute="centerY" secondItem="pj4-sn-0Wn" secondAttribute="centerY" constant="-1" id="sP9-CA-0Ef"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="rTb-9N-Mu4"/>
+            <point key="canvasLocation" x="-29.600000000000001" y="-1.7991004497751126"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Detalle" width="30" height="30"/>
+    </resources>
+</document>

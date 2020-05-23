@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="dataShiftHostViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dataShiftHostViewCell" rowHeight="73" id="SRY-EL-760" customClass="dataShiftHostViewCell" customModule="VirtualLines" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="73"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SRY-EL-760" id="quj-Xn-0H0">
+                <rect key="frame" x="0.0" y="0.0" width="440" height="72.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ticket" translatesAutoresizingMaskIntoConstraints="NO" id="kK5-xK-aeK">
+                        <rect key="frame" x="11" y="12" width="60" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="PAL-aM-SZ3"/>
+                            <constraint firstAttribute="width" constant="60" id="ckZ-my-HeG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="110" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rw5-72-9NA">
+                        <rect key="frame" x="20" y="23.5" width="45" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="b5e-DA-7K3"/>
+                            <constraint firstAttribute="height" constant="27" id="jbO-jx-cHy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Angel Omar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGJ-Jl-ngX">
+                        <rect key="frame" x="110" y="23.5" width="110" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="H65-lS-s1z"/>
+                            <constraint firstAttribute="width" constant="110" id="yC0-pt-utL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgG-HC-YBF">
+                        <rect key="frame" x="243" y="23.5" width="84" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="84" id="VaY-J2-ZjV"/>
+                            <constraint firstAttribute="height" constant="27" id="dvS-Vr-0XO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Llego" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bE-uK-u4F">
+                        <rect key="frame" x="341" y="23.5" width="84" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="84" id="hSD-ev-PMO"/>
+                            <constraint firstAttribute="height" constant="27" id="jai-ng-1ur"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WGJ-Jl-ngX" firstAttribute="top" secondItem="quj-Xn-0H0" secondAttribute="top" constant="23" id="9nf-9P-xkN"/>
+                    <constraint firstItem="WGJ-Jl-ngX" firstAttribute="leading" secondItem="Rw5-72-9NA" secondAttribute="trailing" constant="45" id="CJd-Rn-QCf"/>
+                    <constraint firstItem="5bE-uK-u4F" firstAttribute="leading" secondItem="IgG-HC-YBF" secondAttribute="trailing" constant="14" id="EBC-Cy-jSn"/>
+                    <constraint firstAttribute="bottom" secondItem="Rw5-72-9NA" secondAttribute="bottom" constant="23" id="GRs-Ak-ceb"/>
+                    <constraint firstItem="kK5-xK-aeK" firstAttribute="leading" secondItem="quj-Xn-0H0" secondAttribute="leading" constant="11" id="Hju-Mk-hK6"/>
+                    <constraint firstAttribute="bottom" secondItem="5bE-uK-u4F" secondAttribute="bottom" constant="23" id="JFo-Ez-QHC"/>
+                    <constraint firstItem="Rw5-72-9NA" firstAttribute="leading" secondItem="quj-Xn-0H0" secondAttribute="leading" constant="20" id="LCD-fC-LuE"/>
+                    <constraint firstItem="Rw5-72-9NA" firstAttribute="top" secondItem="quj-Xn-0H0" secondAttribute="top" constant="23" id="OVy-yt-Frx"/>
+                    <constraint firstAttribute="bottom" secondItem="WGJ-Jl-ngX" secondAttribute="bottom" constant="23" id="Ycj-8p-J6v"/>
+                    <constraint firstAttribute="bottom" secondItem="IgG-HC-YBF" secondAttribute="bottom" constant="23" id="bwJ-7J-dns"/>
+                    <constraint firstItem="5bE-uK-u4F" firstAttribute="leading" secondItem="IgG-HC-YBF" secondAttribute="trailing" constant="14" id="c34-Ei-Fsc"/>
+                    <constraint firstAttribute="trailing" secondItem="5bE-uK-u4F" secondAttribute="trailing" constant="15" id="hIa-Ng-227"/>
+                    <constraint firstItem="IgG-HC-YBF" firstAttribute="top" secondItem="quj-Xn-0H0" secondAttribute="top" constant="23" id="mu4-21-GXb"/>
+                    <constraint firstItem="IgG-HC-YBF" firstAttribute="leading" secondItem="WGJ-Jl-ngX" secondAttribute="trailing" constant="23" id="pzg-vU-gyE"/>
+                    <constraint firstItem="WGJ-Jl-ngX" firstAttribute="leading" secondItem="Rw5-72-9NA" secondAttribute="trailing" constant="45" id="qPF-fg-5Xa"/>
+                    <constraint firstItem="IgG-HC-YBF" firstAttribute="leading" secondItem="WGJ-Jl-ngX" secondAttribute="trailing" constant="23" id="sMp-f0-qQn"/>
+                    <constraint firstItem="kK5-xK-aeK" firstAttribute="centerY" secondItem="quj-Xn-0H0" secondAttribute="centerY" id="sVv-GI-sTd"/>
+                    <constraint firstItem="5bE-uK-u4F" firstAttribute="top" secondItem="quj-Xn-0H0" secondAttribute="top" constant="23" id="tcO-5F-YgT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="shiftLabel" destination="Rw5-72-9NA" id="HMP-7h-kAv"/>
+                <outlet property="shiftNameUser" destination="WGJ-Jl-ngX" id="DF5-Hm-zhT"/>
+                <outlet property="shiftStatusLabel" destination="5bE-uK-u4F" id="dQl-uE-TEY"/>
+                <outlet property="shiftTimeLabel" destination="IgG-HC-YBF" id="GQG-jp-fpe"/>
+            </connections>
+            <point key="canvasLocation" x="105.79710144927537" y="83.370535714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Ticket" width="768" height="771"/>
+    </resources>
+</document>

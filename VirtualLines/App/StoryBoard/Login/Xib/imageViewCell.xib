@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="imageViewCell" rowHeight="247" id="VzH-sH-gdP" customClass="imageViewCell" customModule="VirtualLines" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="566" height="241"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VzH-sH-gdP" id="vwS-hL-bRk">
+                <rect key="frame" x="0.0" y="0.0" width="566" height="240.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Agrega imagenes que ayuden a identificar tu negocio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9XT-sZ-MnW">
+                        <rect key="frame" x="44" y="9" width="478" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="OYW-ZK-dsv"/>
+                            <constraint firstAttribute="width" constant="478" id="hPl-Gf-0ER"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IyA-3u-9bk" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                        <rect key="frame" x="107" y="84" width="352" height="105"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBr-uw-BvX">
+                        <rect key="frame" x="430" y="56" width="56" height="54"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="54" id="Mlh-cr-ovU"/>
+                            <constraint firstAttribute="width" constant="56" id="cXC-Ho-kFg"/>
+                        </constraints>
+                        <state key="normal" image="Camera"/>
+                        <connections>
+                            <action selector="cameraButtonTapped:" destination="VzH-sH-gdP" eventType="touchUpInside" id="dFG-VK-dEK"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UU5-DB-5sK">
+                        <rect key="frame" x="421" y="171" width="30" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="HTr-0c-gNI"/>
+                            <constraint firstAttribute="height" constant="34" id="dpP-Cb-ZHa"/>
+                        </constraints>
+                        <state key="normal" image="Delete"/>
+                        <connections>
+                            <action selector="removeButtonTapped:" destination="VzH-sH-gdP" eventType="touchUpInside" id="D1q-1Y-JaY"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="UU5-DB-5sK" secondAttribute="trailing" constant="95" id="9rF-VN-Fal"/>
+                    <constraint firstItem="IyA-3u-9bk" firstAttribute="leading" secondItem="vwS-hL-bRk" secondAttribute="leadingMargin" constant="87" id="EKT-ed-bu6"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="UU5-DB-5sK" secondAttribute="bottom" constant="-9" id="On4-lc-NTJ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="IyA-3u-9bk" secondAttribute="bottom" constant="-25" id="TI7-Pd-caf"/>
+                    <constraint firstItem="9XT-sZ-MnW" firstAttribute="top" secondItem="vwS-hL-bRk" secondAttribute="top" constant="9" id="dXV-g0-wbJ"/>
+                    <constraint firstItem="IyA-3u-9bk" firstAttribute="top" secondItem="9XT-sZ-MnW" secondAttribute="bottom" constant="35" id="fa3-SA-er0"/>
+                    <constraint firstItem="IyA-3u-9bk" firstAttribute="centerX" secondItem="9XT-sZ-MnW" secondAttribute="centerX" id="inY-I0-A5Y"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="uBr-uw-BvX" secondAttribute="trailing" constant="60" id="ndZ-iv-6IA"/>
+                    <constraint firstItem="uBr-uw-BvX" firstAttribute="top" secondItem="9XT-sZ-MnW" secondAttribute="bottom" constant="7" id="rRb-FQ-vQe"/>
+                    <constraint firstItem="9XT-sZ-MnW" firstAttribute="centerX" secondItem="vwS-hL-bRk" secondAttribute="centerX" id="sTT-Nz-5KI"/>
+                    <constraint firstItem="UU5-DB-5sK" firstAttribute="top" secondItem="uBr-uw-BvX" secondAttribute="bottom" constant="61" id="v5K-lz-J9Q"/>
+                    <constraint firstItem="9XT-sZ-MnW" firstAttribute="leading" secondItem="vwS-hL-bRk" secondAttribute="leading" constant="44" id="ziT-O4-wfa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="buttonCamera" destination="uBr-uw-BvX" id="fd9-dM-bBY"/>
+                <outlet property="labelIntructions" destination="9XT-sZ-MnW" id="n0g-u5-j52"/>
+                <outlet property="viewSlideImages" destination="IyA-3u-9bk" id="c6u-D3-IOI"/>
+            </connections>
+            <point key="canvasLocation" x="127.53623188405798" y="87.388392857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Camera" width="256" height="256"/>
+        <image name="Delete" width="256" height="256"/>
+    </resources>
+</document>

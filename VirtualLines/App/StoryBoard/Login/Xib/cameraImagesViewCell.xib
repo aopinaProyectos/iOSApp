@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cameraImagesViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="247" id="lDl-rw-Iia" customClass="cameraImagesViewCell" customModule="VirtualLines" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="468" height="247"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lDl-rw-Iia" id="00g-Tx-XPM">
+                <rect key="frame" x="0.0" y="0.0" width="468" height="246.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7D-o3-Qw2" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                        <rect key="frame" x="75" y="74" width="319" height="158"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="319" id="49g-1c-Xwf"/>
+                            <constraint firstAttribute="height" constant="158" id="APr-OA-Jpo"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jjb-KR-JoB">
+                        <rect key="frame" x="115" y="25" width="238" height="46"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2B-5L-gdM">
+                                <rect key="frame" x="14" y="4" width="35" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="Nwq-G0-XSX"/>
+                                    <constraint firstAttribute="height" constant="38" id="TEL-PX-Hab"/>
+                                </constraints>
+                                <state key="normal" image="Camera"/>
+                                <connections>
+                                    <action selector="cameraButtonTapped:" destination="lDl-rw-Iia" eventType="touchUpInside" id="X8x-MS-LCP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbX-l5-PNH">
+                                <rect key="frame" x="193" y="5" width="35" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="7EZ-bE-TOd"/>
+                                    <constraint firstAttribute="height" constant="38" id="Rbx-4X-wZ7"/>
+                                </constraints>
+                                <state key="normal" image="Delete"/>
+                                <connections>
+                                    <action selector="removeButtonTapped:" destination="lDl-rw-Iia" eventType="touchUpInside" id="gFr-7T-931"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="2k0-tA-kQA"/>
+                            <constraint firstAttribute="bottom" secondItem="tbX-l5-PNH" secondAttribute="bottom" constant="3" id="44j-ld-JEd"/>
+                            <constraint firstItem="tbX-l5-PNH" firstAttribute="top" secondItem="Jjb-KR-JoB" secondAttribute="top" constant="5" id="DzS-Ul-TOn"/>
+                            <constraint firstItem="m2B-5L-gdM" firstAttribute="leading" secondItem="Jjb-KR-JoB" secondAttribute="leading" constant="14" id="Fcg-Un-g0r"/>
+                            <constraint firstAttribute="trailing" secondItem="tbX-l5-PNH" secondAttribute="trailing" constant="10" id="T7p-KH-6w5"/>
+                            <constraint firstAttribute="width" constant="238" id="TeQ-K8-kAS"/>
+                            <constraint firstItem="m2B-5L-gdM" firstAttribute="top" secondItem="Jjb-KR-JoB" secondAttribute="top" constant="4" id="Xhc-ka-hVS"/>
+                            <constraint firstAttribute="bottom" secondItem="m2B-5L-gdM" secondAttribute="bottom" constant="4" id="hXn-D7-2Nu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="H7D-o3-Qw2" firstAttribute="leading" secondItem="00g-Tx-XPM" secondAttribute="leading" constant="75" id="1io-7r-z9X"/>
+                    <constraint firstItem="H7D-o3-Qw2" firstAttribute="top" secondItem="Jjb-KR-JoB" secondAttribute="bottom" constant="3" id="6u4-3n-o9G"/>
+                    <constraint firstItem="Jjb-KR-JoB" firstAttribute="leading" secondItem="00g-Tx-XPM" secondAttribute="leading" constant="115" id="ATG-G4-9sF"/>
+                    <constraint firstItem="H7D-o3-Qw2" firstAttribute="top" secondItem="Jjb-KR-JoB" secondAttribute="bottom" constant="3" id="BI3-fl-JVV"/>
+                    <constraint firstAttribute="bottom" secondItem="H7D-o3-Qw2" secondAttribute="bottom" constant="15.5" id="VbZ-0d-uoP"/>
+                    <constraint firstItem="H7D-o3-Qw2" firstAttribute="top" secondItem="Jjb-KR-JoB" secondAttribute="bottom" constant="3" id="arb-ot-pXN"/>
+                    <constraint firstAttribute="trailing" secondItem="Jjb-KR-JoB" secondAttribute="trailing" constant="115" id="b68-Up-q0R"/>
+                    <constraint firstItem="H7D-o3-Qw2" firstAttribute="top" secondItem="Jjb-KR-JoB" secondAttribute="bottom" constant="3" id="c64-Gt-cge"/>
+                    <constraint firstItem="Jjb-KR-JoB" firstAttribute="top" secondItem="00g-Tx-XPM" secondAttribute="top" constant="25" id="cvI-ak-RUQ"/>
+                    <constraint firstAttribute="trailing" secondItem="H7D-o3-Qw2" secondAttribute="trailing" constant="74" id="gQj-jb-VGl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="buttonCamera" destination="m2B-5L-gdM" id="IE5-gb-ZB7"/>
+                <outlet property="buttonRemove" destination="tbX-l5-PNH" id="kEk-eI-VcE"/>
+                <outlet property="controlView" destination="Jjb-KR-JoB" id="BVm-WC-Zkl"/>
+                <outlet property="viewSlideImages" destination="H7D-o3-Qw2" id="iQW-Un-yVm"/>
+            </connections>
+            <point key="canvasLocation" x="153.62318840579712" y="116.51785714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Camera" width="256" height="256"/>
+        <image name="Delete" width="256" height="256"/>
+    </resources>
+</document>

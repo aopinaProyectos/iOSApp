@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Jv0-q2-GhR" customClass="Slide3" customModule="VirtualLines" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" restorationIdentifier="Slide3" translatesAutoresizingMaskIntoConstraints="NO" id="4aY-BK-OhY" customClass="Slide3" customModule="VirtualLines" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T9Y-xC-RUT">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atX-9D-hN1">
+                                    <rect key="frame" x="0.0" y="361" width="375" height="306"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virtual Lines una aplicaciòn que te permite formar filas virtuales, en cualquiera de tus establecimientos favoritos." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZQ-lH-loB">
+                                            <rect key="frame" x="20.5" y="20" width="334" height="145"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="334" id="N48-3j-EYt"/>
+                                                <constraint firstAttribute="height" constant="145" id="rPy-CZ-duJ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hhf-kG-yKF">
+                                            <rect key="frame" x="35.5" y="236" width="304" height="50"/>
+                                            <color key="backgroundColor" red="0.25098039220000001" green="0.47843137250000001" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="304" id="87f-SS-KMY"/>
+                                                <constraint firstAttribute="height" constant="50" id="Cbp-dD-62p"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="21"/>
+                                            <state key="normal" title="Comenzar">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.97262543440000004" green="0.97634035350000004" blue="0.98431545499999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstItem="Hhf-kG-yKF" firstAttribute="centerX" secondItem="atX-9D-hN1" secondAttribute="centerX" id="MD6-rb-FdF"/>
+                                        <constraint firstItem="7ZQ-lH-loB" firstAttribute="centerX" secondItem="atX-9D-hN1" secondAttribute="centerX" id="lIF-51-dQF"/>
+                                        <constraint firstItem="7ZQ-lH-loB" firstAttribute="top" secondItem="atX-9D-hN1" secondAttribute="top" constant="20" id="mnd-Gp-zYb"/>
+                                        <constraint firstAttribute="bottom" secondItem="Hhf-kG-yKF" secondAttribute="bottom" constant="20" id="sDG-gi-bqG"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                            <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TutorialTime" translatesAutoresizingMaskIntoConstraints="NO" id="BrK-yQ-7Pb">
+                                    <rect key="frame" x="88.5" y="69" width="198" height="166"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="166" id="1T7-Fp-oUX"/>
+                                        <constraint firstAttribute="width" constant="198" id="wRK-pY-gRz"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.25098039220000001" green="0.47843137250000001" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="atX-9D-hN1" firstAttribute="top" secondItem="BrK-yQ-7Pb" secondAttribute="bottom" constant="126" id="3H7-mJ-ZqJ"/>
+                                <constraint firstAttribute="trailing" secondItem="atX-9D-hN1" secondAttribute="trailing" id="Fzq-Ew-lff"/>
+                                <constraint firstItem="BrK-yQ-7Pb" firstAttribute="top" secondItem="T9Y-xC-RUT" secondAttribute="top" constant="69" id="bb4-ji-HCg"/>
+                                <constraint firstAttribute="bottom" secondItem="atX-9D-hN1" secondAttribute="bottom" id="fIq-lf-9cl"/>
+                                <constraint firstItem="BrK-yQ-7Pb" firstAttribute="centerX" secondItem="T9Y-xC-RUT" secondAttribute="centerX" id="hcO-xz-civ"/>
+                                <constraint firstItem="atX-9D-hN1" firstAttribute="leading" secondItem="T9Y-xC-RUT" secondAttribute="leading" id="pPz-wr-0zM"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="T9Y-xC-RUT" firstAttribute="leading" secondItem="4aY-BK-OhY" secondAttribute="leading" id="535-oz-XJE"/>
+                        <constraint firstAttribute="trailing" secondItem="T9Y-xC-RUT" secondAttribute="trailing" id="6J1-5Q-UOb"/>
+                        <constraint firstAttribute="bottom" secondItem="T9Y-xC-RUT" secondAttribute="bottom" id="O0h-jq-tpC"/>
+                        <constraint firstItem="T9Y-xC-RUT" firstAttribute="top" secondItem="4aY-BK-OhY" secondAttribute="top" id="QHe-wm-MIb"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="button" destination="Hhf-kG-yKF" id="l6z-KR-UnO"/>
+                        <outlet property="image" destination="BrK-yQ-7Pb" id="2Pv-rr-Hj2"/>
+                        <outlet property="label1" destination="7ZQ-lH-loB" id="fdu-O0-s4R"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4aY-BK-OhY" secondAttribute="bottom" id="EkB-ao-qFD"/>
+                <constraint firstItem="4aY-BK-OhY" firstAttribute="leading" secondItem="Jv0-q2-GhR" secondAttribute="leading" id="J9L-3v-PbH"/>
+                <constraint firstAttribute="trailing" secondItem="4aY-BK-OhY" secondAttribute="trailing" id="J9l-Yj-a8W"/>
+                <constraint firstItem="4aY-BK-OhY" firstAttribute="top" secondItem="Jv0-q2-GhR" secondAttribute="top" id="ndi-W9-zam"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ze9-lo-GMz"/>
+            <connections>
+                <outlet property="button" destination="Hhf-kG-yKF" id="gN5-Cu-YhK"/>
+                <outlet property="image" destination="BrK-yQ-7Pb" id="GvQ-K3-LoR"/>
+                <outlet property="label1" destination="7ZQ-lH-loB" id="0cQ-dU-gZF"/>
+            </connections>
+            <point key="canvasLocation" x="52" y="47.226386806596707"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="TutorialTime" width="375" height="375"/>
+    </resources>
+</document>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="buttonProfileViewCell" rowHeight="72" id="jeG-ik-wp7" customClass="buttonProfileViewCell" customModule="VirtualLines" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jeG-ik-wp7" id="2Iy-WY-R3Y">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhd-dF-ccJ">
+                        <rect key="frame" x="72" y="14.5" width="270" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="GNa-oP-r5T"/>
+                            <constraint firstAttribute="width" constant="270" id="rKV-6z-kb3"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="saveButtonPressedWithSender:" destination="jeG-ik-wp7" eventType="touchUpInside" id="uCK-Yj-VqD"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xhd-dF-ccJ" firstAttribute="centerX" secondItem="2Iy-WY-R3Y" secondAttribute="centerX" id="304-h5-fAU"/>
+                    <constraint firstItem="xhd-dF-ccJ" firstAttribute="centerY" secondItem="2Iy-WY-R3Y" secondAttribute="centerY" id="kc6-Td-Av1"/>
+                    <constraint firstAttribute="bottom" secondItem="xhd-dF-ccJ" secondAttribute="bottom" constant="14" id="mHn-65-VV6"/>
+                    <constraint firstItem="xhd-dF-ccJ" firstAttribute="top" secondItem="2Iy-WY-R3Y" secondAttribute="top" constant="14" id="zAn-o3-WZg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="buttonSave" destination="xhd-dF-ccJ" id="THv-nl-DCP"/>
+            </connections>
+            <point key="canvasLocation" x="127.53623188405798" y="79.6875"/>
+        </tableViewCell>
+    </objects>
+</document>

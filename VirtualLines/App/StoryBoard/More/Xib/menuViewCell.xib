@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="menuViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuViewCell" id="Sft-1f-awM" customClass="menuViewCell" customModule="VirtualLines" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sft-1f-awM" id="SWK-CX-rgK">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cerrar Sesión" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6JD-Zc-htc">
+                        <rect key="frame" x="32" y="11.5" width="306" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="306" id="jvc-7y-mda"/>
+                            <constraint firstAttribute="height" constant="21" id="txs-zp-Fe5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logout" translatesAutoresizingMaskIntoConstraints="NO" id="C58-oh-CgC">
+                        <rect key="frame" x="364" y="8" width="30" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="2b7-7R-Yjv"/>
+                            <constraint firstAttribute="height" constant="28" id="qoj-L9-DOG"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6JD-Zc-htc" firstAttribute="centerX" secondItem="SWK-CX-rgK" secondAttribute="centerX" constant="-22" id="2Na-d1-Jo2"/>
+                    <constraint firstItem="C58-oh-CgC" firstAttribute="centerY" secondItem="SWK-CX-rgK" secondAttribute="centerY" id="SLN-lB-Alp"/>
+                    <constraint firstItem="C58-oh-CgC" firstAttribute="leading" secondItem="6JD-Zc-htc" secondAttribute="trailing" constant="26" id="msT-GP-ihl"/>
+                    <constraint firstAttribute="trailing" secondItem="C58-oh-CgC" secondAttribute="trailing" constant="20" id="xjJ-vk-iRP"/>
+                    <constraint firstItem="6JD-Zc-htc" firstAttribute="centerY" secondItem="SWK-CX-rgK" secondAttribute="centerY" id="zaR-oG-Viz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="optionImage" destination="C58-oh-CgC" id="TFB-3P-DPa"/>
+                <outlet property="optionLabel" destination="6JD-Zc-htc" id="ZnL-Jh-6iQ"/>
+            </connections>
+            <point key="canvasLocation" x="108.69565217391305" y="48.883928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Logout" width="256" height="256"/>
+    </resources>
+</document>

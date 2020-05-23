@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="q6M-A3-EI8" customClass="Slide2" customModule="VirtualLines" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" restorationIdentifier="Slide1" translatesAutoresizingMaskIntoConstraints="NO" id="ko9-Ig-VTc" customClass="Slide1" customModule="VirtualLines" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkF-x9-CIu">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCT-ga-6b4">
+                                    <rect key="frame" x="0.0" y="361" width="375" height="306"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virtual Lines una aplicaciòn que te permite formar filas virtuales, en cualquiera de tus establecimientos favoritos." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGn-Th-de4">
+                                            <rect key="frame" x="20.5" y="20" width="334" height="145"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="334" id="7ee-9Z-dgD"/>
+                                                <constraint firstAttribute="height" constant="145" id="SeL-uk-W35"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXD-4G-1c1">
+                                            <rect key="frame" x="35.5" y="236" width="304" height="50"/>
+                                            <color key="backgroundColor" red="0.25098039220000001" green="0.47843137250000001" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="304" id="7f1-Cl-viM"/>
+                                                <constraint firstAttribute="height" constant="50" id="ApY-Rg-cnh"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="21"/>
+                                            <state key="normal" title="Comenzar">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.97262543440000004" green="0.97634035350000004" blue="0.98431545499999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstItem="JGn-Th-de4" firstAttribute="centerX" secondItem="aCT-ga-6b4" secondAttribute="centerX" id="3dd-gf-MFZ"/>
+                                        <constraint firstAttribute="bottom" secondItem="nXD-4G-1c1" secondAttribute="bottom" constant="20" id="8qb-mY-dCa"/>
+                                        <constraint firstItem="JGn-Th-de4" firstAttribute="top" secondItem="aCT-ga-6b4" secondAttribute="top" constant="20" id="BWd-mG-s6J"/>
+                                        <constraint firstItem="nXD-4G-1c1" firstAttribute="centerX" secondItem="aCT-ga-6b4" secondAttribute="centerX" id="odD-EA-AT3"/>
+                                    </constraints>
+                                </view>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TutorialStore" translatesAutoresizingMaskIntoConstraints="NO" id="Aqz-NR-olm">
+                                    <rect key="frame" x="88.5" y="69" width="198" height="166"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="166" id="Au9-cl-Sol"/>
+                                        <constraint firstAttribute="width" constant="198" id="d5f-as-CIW"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.25098039220000001" green="0.47843137250000001" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="Aqz-NR-olm" firstAttribute="centerX" secondItem="xkF-x9-CIu" secondAttribute="centerX" id="0iT-Ho-mvB"/>
+                                <constraint firstAttribute="trailing" secondItem="aCT-ga-6b4" secondAttribute="trailing" id="EIM-pk-4pc"/>
+                                <constraint firstAttribute="bottom" secondItem="aCT-ga-6b4" secondAttribute="bottom" id="KWH-dk-qHQ"/>
+                                <constraint firstItem="aCT-ga-6b4" firstAttribute="leading" secondItem="xkF-x9-CIu" secondAttribute="leading" id="NCs-Nx-tve"/>
+                                <constraint firstItem="Aqz-NR-olm" firstAttribute="top" secondItem="xkF-x9-CIu" secondAttribute="top" constant="69" id="SN8-G8-hn7"/>
+                                <constraint firstItem="aCT-ga-6b4" firstAttribute="top" secondItem="Aqz-NR-olm" secondAttribute="bottom" constant="126" id="isY-KG-Cpy"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="xkF-x9-CIu" secondAttribute="trailing" id="eNy-x8-8qQ"/>
+                        <constraint firstAttribute="bottom" secondItem="xkF-x9-CIu" secondAttribute="bottom" id="geG-b8-j83"/>
+                        <constraint firstItem="xkF-x9-CIu" firstAttribute="leading" secondItem="ko9-Ig-VTc" secondAttribute="leading" id="hxg-Am-OVj"/>
+                        <constraint firstItem="xkF-x9-CIu" firstAttribute="top" secondItem="ko9-Ig-VTc" secondAttribute="top" id="o1d-cw-a34"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ko9-Ig-VTc" firstAttribute="leading" secondItem="q6M-A3-EI8" secondAttribute="leading" id="EEL-kb-VvA"/>
+                <constraint firstAttribute="trailing" secondItem="ko9-Ig-VTc" secondAttribute="trailing" id="eQ1-kl-cha"/>
+                <constraint firstItem="ko9-Ig-VTc" firstAttribute="top" secondItem="q6M-A3-EI8" secondAttribute="top" id="hyl-OG-lE9"/>
+                <constraint firstAttribute="bottom" secondItem="ko9-Ig-VTc" secondAttribute="bottom" id="mYL-fb-GeL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="D2e-eB-DOW"/>
+            <connections>
+                <outlet property="button" destination="nXD-4G-1c1" id="HoX-BA-XW4"/>
+                <outlet property="image" destination="Aqz-NR-olm" id="NM5-hN-YWS"/>
+                <outlet property="label1" destination="JGn-Th-de4" id="Ugq-sK-NZJ"/>
+            </connections>
+            <point key="canvasLocation" x="52" y="47.226386806596707"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="TutorialStore" width="393" height="333"/>
+    </resources>
+</document>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="addressPopCell2" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="addressPopCell2" rowHeight="57" id="Wj5-pg-O46" customClass="addressPopCell2" customModule="VirtualLines" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wj5-pg-O46" id="2Qa-g2-RCA">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="56.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Office" translatesAutoresizingMaskIntoConstraints="NO" id="y2I-hK-7ha">
+                        <rect key="frame" x="23" y="11" width="34" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="G8e-s4-8Ep"/>
+                            <constraint firstAttribute="height" constant="34" id="bmy-K9-Xoh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oficina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDc-7H-JVv">
+                        <rect key="frame" x="68" y="9" width="200" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="MTq-JQ-aFQ"/>
+                            <constraint firstAttribute="width" constant="200" id="YUf-xu-vr8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Campeche 429 Col. Condesa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7d9-cq-YIN">
+                        <rect key="frame" x="68" y="30" width="260" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="35U-rB-ny4"/>
+                            <constraint firstAttribute="width" constant="260" id="BJM-vH-dtc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kq9-bM-VUL">
+                        <rect key="frame" x="358" y="14" width="28" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="28" id="aMl-2B-NxQ"/>
+                            <constraint firstAttribute="height" constant="28" id="w01-WT-RS8"/>
+                        </constraints>
+                        <state key="normal" image="Delete"/>
+                        <connections>
+                            <action selector="removeButtonWithSender:" destination="Wj5-pg-O46" eventType="touchUpInside" id="WOE-KK-ffb"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Checked" translatesAutoresizingMaskIntoConstraints="NO" id="qOL-5B-zok">
+                        <rect key="frame" x="397" y="6" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="FVF-nG-sVA"/>
+                            <constraint firstAttribute="height" constant="10" id="lUG-cT-8q0"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7d9-cq-YIN" firstAttribute="top" secondItem="HDc-7H-JVv" secondAttribute="bottom" id="1zT-ng-xhJ"/>
+                    <constraint firstItem="HDc-7H-JVv" firstAttribute="top" secondItem="2Qa-g2-RCA" secondAttribute="top" constant="9" id="5Vd-ji-WEs"/>
+                    <constraint firstItem="HDc-7H-JVv" firstAttribute="leading" secondItem="y2I-hK-7ha" secondAttribute="trailing" constant="11" id="6GD-Lx-meW"/>
+                    <constraint firstAttribute="bottom" secondItem="Kq9-bM-VUL" secondAttribute="bottom" constant="14.5" id="6Ne-IP-5Er"/>
+                    <constraint firstItem="Kq9-bM-VUL" firstAttribute="leading" secondItem="HDc-7H-JVv" secondAttribute="trailing" constant="90" id="G6v-im-yhm"/>
+                    <constraint firstItem="y2I-hK-7ha" firstAttribute="leading" secondItem="2Qa-g2-RCA" secondAttribute="leading" constant="23" id="GMQ-Uc-eES"/>
+                    <constraint firstAttribute="trailing" secondItem="Kq9-bM-VUL" secondAttribute="trailing" constant="28" id="LoC-nd-SJ5"/>
+                    <constraint firstItem="7d9-cq-YIN" firstAttribute="top" secondItem="HDc-7H-JVv" secondAttribute="bottom" id="Xma-lR-W5K"/>
+                    <constraint firstItem="Kq9-bM-VUL" firstAttribute="leading" secondItem="7d9-cq-YIN" secondAttribute="trailing" constant="30" id="b1r-vh-rZ1"/>
+                    <constraint firstItem="Kq9-bM-VUL" firstAttribute="top" secondItem="2Qa-g2-RCA" secondAttribute="top" constant="14" id="bmZ-ab-mRX"/>
+                    <constraint firstItem="y2I-hK-7ha" firstAttribute="top" secondItem="2Qa-g2-RCA" secondAttribute="top" constant="11" id="cXA-LL-b70"/>
+                    <constraint firstItem="Kq9-bM-VUL" firstAttribute="leading" secondItem="7d9-cq-YIN" secondAttribute="trailing" constant="30" id="d2u-2Z-flJ"/>
+                    <constraint firstItem="HDc-7H-JVv" firstAttribute="leading" secondItem="y2I-hK-7ha" secondAttribute="trailing" constant="11" id="fxP-Hr-ShY"/>
+                    <constraint firstItem="qOL-5B-zok" firstAttribute="top" secondItem="2Qa-g2-RCA" secondAttribute="top" constant="6" id="fyQ-ed-09k"/>
+                    <constraint firstItem="7d9-cq-YIN" firstAttribute="leading" secondItem="y2I-hK-7ha" secondAttribute="trailing" constant="11" id="jp9-6a-SMp"/>
+                    <constraint firstAttribute="bottom" secondItem="y2I-hK-7ha" secondAttribute="bottom" constant="11.5" id="rBh-95-ee1"/>
+                    <constraint firstAttribute="bottom" secondItem="qOL-5B-zok" secondAttribute="bottom" constant="40.5" id="tie-Yy-yPb"/>
+                    <constraint firstAttribute="bottom" secondItem="7d9-cq-YIN" secondAttribute="bottom" constant="5.5" id="y7k-ov-vug"/>
+                    <constraint firstAttribute="trailing" secondItem="qOL-5B-zok" secondAttribute="trailing" constant="7" id="zf6-xv-Osm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="address" destination="7d9-cq-YIN" id="n3r-Ie-ETA"/>
+                <outlet property="buttonRemove" destination="Kq9-bM-VUL" id="wZs-vG-dN6"/>
+                <outlet property="check" destination="qOL-5B-zok" id="iaF-p9-s21"/>
+                <outlet property="imageAdd" destination="y2I-hK-7ha" id="AZD-NC-83p"/>
+                <outlet property="name" destination="HDc-7H-JVv" id="3fE-uf-pyy"/>
+            </connections>
+            <point key="canvasLocation" x="108.69565217391305" y="-53.90625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Checked" width="256" height="256"/>
+        <image name="Delete" width="256" height="256"/>
+        <image name="Office" width="256" height="256"/>
+    </resources>
+</document>

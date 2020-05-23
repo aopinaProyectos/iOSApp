@@ -1,0 +1,138 @@
+/* 
+  Localizable.strings
+  VirtualLines
+
+  Created by Angel Omar Piña on 4/2/19.
+  Copyright © 2019 Apps Realities. All rights reserved.
+*/
+
+//AceptOptions
+"ACCEPT" = "Aceptar";
+"CANCEL" = "Cancelar";
+
+//Button
+"ENTER" = "Ingresar";
+"NEXT" = "Siguiente";
+"RETRY" = "Intentemoslo de nuevo";
+"SEND" = "Enviar";
+"SAVE" = "Guardar";
+
+//CountryPickerView
+"BUTTONCANCEL" = "Cerrar";
+"PREFERENCES" = "Preferencias";
+"TITLESECTIONS" = "Selecciona un país";
+
+//CustomAlerts
+"NOINTERNET" = "No se detecto conexión a internet. Intentalo nuevamente.";
+
+//Days
+"MONDAY" = "Lunes";
+"TUESDAY" = "Martes";
+"WEDNESDAY" = "Miércoles";
+"THURSDAY" = "Jueves";
+"FRIDAY" = "Viernes";
+"SATURDAY" = "Sábado";
+"SUNDAY" = "Domingo";
+
+//Status
+"PENDING" = "Pendiente";
+"ONWAY" = "En camino";
+"INPLACE" = "En lugar";
+"ATTENDED" = "Atendido";
+"LATE" = "Tarde";
+
+//ErrorAlerts
+"INTERNETSLOW" = "Tu conexión a Internet no es muy estable. ¿Deseas continuar?";
+"NOINTERNETCONNECTION" = "No cuentas con Internet, Revisa tu conexión";
+
+//GREETINGS
+"AFTERNOON" = "Buenas Tardes";
+"EVENING" = "Buenas Noches";
+"MORNING" = "Buenos Días";
+
+//Galery
+"REQUESTIMAGE" = "Imagen del negocio";
+"PHOTOLIBRARY" = "Galeria de Fotos";
+"TAKEPHOTO" = "Tomar Foto";
+
+//Languages
+"SPANISH" = "Español";
+"ENGLISH" = "Ingles";
+
+//MenuOptions
+"LOGOUT" = "Cerrar Sesión";
+"NEEDHELP" = "¿Necesitas Ayuda?";
+"TERMS" = "Terminos y Condiciones";
+"PRIVACITY" = "Aviso de Privacidad";
+"ABOUT" = "Conocenos";
+
+//PlaceHolder
+"PHDNAME" = "Ingresa tu nombre";
+"PHDNAMESTORE" = "Ingresa el nombre de tu negocio";
+"PHDEMAIL" = "Ingresa tu email";
+"PHDNAMESTORE" = "Ingresa el nombre del negocio";
+"PHDWEBSITE" = "Ingresa el sitio web de tu negocio";
+"PHDPHONE" = "Ingresa tu telefono de contacto";
+"PHDSTOREDESCRIPTION" = "Ingresa la descripción de tu negocio";
+"PHDSEARCHBAR" = "¡Ahorremos tiempo!";
+"PHDOTHER" = "Agrega el nombre de tu dirección";
+"PHDNEWPWD" = "Ingresa tu nueva contraseña";
+"PHDOLDPWD" = "Ingresa tu contraseña actual";
+
+//PickerViews
+"PCKCATEGORY" = "Categorías";
+"PCKCATEGORYFIRST" = "Selecciona una Categoría";
+
+
+//Tutorial
+
+"TUTORIAL1LABEL1" = "Virtual Lines una aplicación que te permite formar filas virtuales, en cualquiera de tus establecimientos favoritos.";
+"TUTORIAL1LABEL2" = "Es muy facil de usar solo tienes que ubicar el establecimiento de tu preferencia.";
+
+"TUTORIAL2LABEL1" = "¿Acaso eres propietario de algun negocio o establecimiento?";
+"TUTORIAL2LABEL2" = "Nosotros podemos proporcionarte herramientas que te permitan gestionar adecuadamente el control de las personas que llegan a tu negocio.";
+
+"TUTORIAL3LABEL1" = "Como usuario tienes muchos beneficios";
+"TUTORIAL3LABEL2" = "Ahorra tiempo en largas filas, Visualiza el tiempo de espera de tus establecimientos favoritos, Planifica mejor las actividades de tu dia";
+
+// CodeView
+"BUTTONCHANGE" = "Quiero corregir mi número telefónico";
+"BUTTONRESEND" = "Reenviar SMS";
+"INSTRUCTIONS" = "Ingresa el codigo de 4 digitos enviado al número";
+
+//LoginPasswordView
+"PASSGREETING" = "Ingresa tu contraseña para continuar";
+
+//RecoveryPasswordView
+"BUTTONSENDRP" = "Enviar";
+"INSTRUCTIONSRP" = "Ingresa el correo con el que te registraste";
+
+//PasswordRecoveryView
+"INSTRUCTIONSPR" = "Ingresa tu nueva contraseña";
+
+//RegisterDataHostView
+"TITLEPROFILE" = "Perfil del establecimiento";
+"TITLESCHEDULE" = "Horarios";
+
+//DataStoreView
+"DSHEADERPREFERENCE" = "Vuelve a obtener tu linea";
+"DSHEADERNEARBY" = "Cercanas";
+
+//ProfileView
+"TITLEPROFILEDATA" = "Datos de Perfil";
+"TITLEADDRESS" = "Mis Direcciones";
+"TITLECHANGEPASSWORD" = "Cambio de Contraseña";
+"NAMECELL" = "Nombre";
+"EMAILCELL" = "Correo Eléctronico";
+"PHONECELL" = "Teléfono Móvil";
+"GENDERCELL" = "Sexo";
+"BIRTHDATECELL" = "Fecha de Nacimiento";
+"PASSWORDBEFORE" = "Contraseña Actual";
+"PASSWORDNOW" = "Contraseña Nueva";
+"PERCENTPROFILE" = "Tu perfil esta completo al ";
+
+//ShiftInformationUserView
+"INSTUCTIONSSIUVC" = "Tu turno es:";
+
+
+
